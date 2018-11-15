@@ -3,42 +3,86 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ポートフォリオ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/marx.min.css">
+    <title>ポートフォリオ</title>
+    <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Candal|Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/marx.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
   </head>
   <body>
-    <!-- main is the container -->
-    <main>
-      <!-- Navigation -->
-      <nav>
-        <ul>
-          <li><a href="#"><b>First</b></a></li>
-          <li><a href="#">Second</a></li>
-          <li><a href="#">Third</a></li>
-          <li><a href="#">Fourth</a></li>
-        </ul>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+          <!-- ヘッダー部分 ================ -->
+          <div class="navbar-header">
+              <!-- <a class="navbar-brand" href="#"></a> -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-target" aria-controls="nav-target" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+          <!-- 中央のナビゲーション部分 ================ -->
+          <div class="collapse navbar-collapse justify-content-center" id="nav-target">
+              <ul class="navbar-nav mr-auto justify-content-center">
+                  <li class="nav-item mr-md-5">
+                      <a class="nav-link pb-0 active" href="#">Top</a>
+                  </li>
+                  <li class="nav-item mr-md-5">
+                      <a class="nav-link pb-0" href="#profile">Profile</a>
+                  </li>
+                  <li class="nav-item mr-md-5">
+                      <a class="nav-link pb-0" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link pb-0" href="#work">work</a>
+                  </li>
+              </ul>
+          </div>
       </nav>
-
-      <!-- article -->
+      <header class="mt-5 mb-5">
+          <div class="container">
+              <h1 class="text-center pt-5 mt-5">Portfolio</h1>
+              <p class="text-center pt-5 mb-1">Shigeru Tsuruki</p>
+          </div>
+      </header>
+    <main>
       <article>
-        <h1>Article</h1>
+        <div class="container">
+          <h2 id="profile">Profile</h2>
+          <p>COBOL,PL/1で開発をしたことがあります。<br>
+          現在は、他業界で仕事をしていますが、プログラミングの勉強は続けています。</p>
+          <h2 id="skills">Skills</h2>
+          <p>HTML,CSS,Javascript,java,PHP,Ruby</p>
+          <h2 id="work">work</h2>
+          <p></p>
+        </div>
       </article>
 
-      <!-- aside -->
-      <aside>
-        <h1>Aside</h1>
-      </aside>
-
-      <!-- section -->
-      <section>
-        <h1>Section</h1>
-      </section>
-
       <!-- footer -->
-      <footer>
-        <p>&copy; Matthew Blode 2016</p>
+      <footer class="fixed-bottom">
+        <div class="container center-block">
+            <a class="btn btn-social btn-fb" href="#" role="button"><i class="fab fa-facebook"></i></a>
+            <a class="btn btn-social btn-tw" href="#" role="button"><i class="fab fa-twitter ml-3"></i></a>
+        </div>
       </footer>
     </main>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script>
+        $(function() {
+            $('a[href^="#"]', this).click(function(){
+                var speed = 500;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - 70;
+                $("html, body").animate({scrollTop: position}, speed, "easeInOutQuart");
+                $('ul li a.active').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+        });
+    </script>
   </body>
 </html>
