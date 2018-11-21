@@ -24,11 +24,7 @@ body {
 }
 @media (max-width:576px) {
   .container {
-    background-position: top;
-    max-width: 800px;
-    height: 480px;
-    padding: 50px 100px;
-    text-align: center;
+    background-position: 0;
   }
 }
 
