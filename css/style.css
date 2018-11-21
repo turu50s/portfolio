@@ -15,8 +15,8 @@ body {
 
 @media (max-width:576px) {
   body::before {
-  background:url('../images/back.png') no-repeat left top;
-  background-size: 100% auto;
+  background:url('../images/back.png') repeat left top;
+  background-size: 100% 100%;
   display: block;
   position: fixed;
   top: 0;
@@ -115,7 +115,7 @@ h2 {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:568px) {
   .img-portfolio {
     margin-top: 10px;
     max-width: 110px;
