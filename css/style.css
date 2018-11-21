@@ -2,18 +2,20 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-  background-image: url("../images/back.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #fff;
-  color: #fff;
+@media (min-width:576px) {
+  body {
+    margin: 0 auto;
+    background-image: url("../images/back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+    color: #fff;
+}
 }
 
-@media (max-width:576px) {
+@media (min-width:380px) {
   body::before {
   background:url('../images/back.png') left top;
   background-size: 100% 100%;
