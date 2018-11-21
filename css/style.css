@@ -15,7 +15,7 @@ body {
 
 @media (max-width:767px) {
   body {
-    background-image: url("../images/back.png");
+    background-image: url("../images/back1.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
