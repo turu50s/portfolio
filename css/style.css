@@ -24,8 +24,7 @@ body {
 }
 @media (max-width:576px) {
   .container {
-    padding-Top: 10px 100px;
-    background-size: contain;
+    background-attachment: fixed;
   }
 }
 
