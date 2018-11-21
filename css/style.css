@@ -24,6 +24,7 @@ body {
 }
 @media (max-width:576px) {
   .container {
+    background-position: top;
     max-width: 800px;
     height: 480px;
     padding: 50px 100px;
@@ -90,6 +91,7 @@ h2 {
     margin-top: 10px;
     max-width: 150px;
   }
+
   .img-pc {
     margin-top: 10px;
     max-width: 100px;
