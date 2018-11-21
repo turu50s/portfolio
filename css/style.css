@@ -15,8 +15,12 @@ body {
 
 @media (max-width:767px) {
   body {
-  background:url('../images/back.png');
-  background-repeat: repeat;
+    background-image: url("../images/back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: #fff;
+    color: #fff;
 }
 
 .container {
