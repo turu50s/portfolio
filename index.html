@@ -33,7 +33,7 @@
                       <a class="nav-link pb-0" href="#profile">Profile</a>
                   </li>
                   <li class="nav-item mr-md-5">
-                      <a class="nav-link pb-0" href="#skills">Skills</a>
+                      <a class="nav-link pb-0" href="#skill">Skill</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link pb-0" href="#work">work</a>
@@ -48,21 +48,38 @@
           </div>
       </header>
     <main>
-      <article>
-        <div class="container">
-          <h2 id="profile">Profile</h2>
-          <p>COBOL,PL/1で開発をしたことがあります。<br>
-          現在は、他業界で仕事をしていますが、プログラミングの勉強は続けています。</p>
-          <h2 id="skills">Skills</h2>
-          <p>HTML,CSS,Javascript,java,PHP,Ruby</p>
-          <h2 id="work">work</h2>
-          <p></p>
+      <div class="container">
+        <h2 id="profile" class="mb-4">Profile</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/pc.png" class="img-pc img-circle">
+            </div>
+            <div class="col-md-8">
+                <table class="table table-striped">
+                    <tr class="text-left"><td class="ml-3">大阪府出身で、現在千葉県に住んでいます。</td class="ml-3"></tr>
+                    <tr class="text-left"><td class="ml-3">過去にCOBOL,PL/1で開発をしたことがあります。</td></tr>
+                    <tr class="text-left"><td>WEBアプリケーションを作りたく勉強中です。</td></tr>
+                </table>
+            </div>
         </div>
-      </article>
-
-      <!-- footer -->
+      </div>
+      <div class="container">
+        <h2 id="skill" class="mb-4">Skill</h2>
+        <p class="text-left ml-5"><i class="fab fa-html5">HTML</i></p>
+        <p class="text-left ml-5"><i class="fab fa-css3-alt">CSS</i></p>
+        <p class="text-left ml-5"><i class="fab fa-js">JS</i></p>
+        <p class="text-left ml-5"><i class="fab fa-php">PHP</i></p>
+      </div>
+      <div class="container container-work">
+        <h2 id="work">work</h2>
+        <div class="text-center ml-5">
+            <div><img src="images/portfolio.png" class="img-portfolio img-thumbnail"></div>
+            <a href="#">
+            <img src="images/GitHub-Mark-Light-64px.png" width="50px" hight="50px"></a>
+        </div>
+      </div>
       <footer class="fixed-bottom">
-        <div class="container center-block">
+        <div class="icons">
             <a class="btn btn-social btn-fb" href="#" role="button"><i class="fab fa-facebook"></i></a>
             <a class="btn btn-social btn-tw" href="#" role="button"><i class="fab fa-twitter ml-3"></i></a>
         </div>
@@ -76,7 +93,7 @@
                 var speed = 500;
                 var href = $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
-                var position = target.offset().top - 70;
+                var position = target.offset().top - 150;
                 $("html, body").animate({scrollTop: position}, speed, "easeInOutQuart");
                 $('ul li a.active').removeClass('active');
                 $(this).addClass('active');
