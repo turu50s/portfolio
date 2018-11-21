@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media (min-width:380px) {
+@media (min-width:567px) {
   body::before {
   background:url('../images/back.png') left top;
   background-size: 100% 100%;
@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width:576px) {
+@media (min-width:770px) {
   body {
     margin: 0 auto;
     background-image: url("../images/back.png");
