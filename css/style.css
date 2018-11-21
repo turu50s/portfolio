@@ -22,6 +22,14 @@ body {
   /* margin-bottom: 100px; */
   /* background-color: rgba(30,120,110,0.7); */
 }
+@media (max-width:576px) {
+  .container {
+    max-width: 800px;
+    height: 480px;
+    padding: 50px 100px;
+    text-align: center;
+  }
+}
 
 .container-work {
   padding-top: 10px;
