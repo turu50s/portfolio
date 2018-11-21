@@ -24,7 +24,7 @@ body {
 }
 
 .container-work {
-  padding-top: 0px;
+  padding-top: 10px;
   margin-top: -50px;
 }
 
@@ -77,8 +77,25 @@ h2 {
   max-width: 200px;
 }
 
-.img-portfolio {
-  max-width: 180px;
+@media (max-width:768px) {
+  .img-portfolio {
+    margin-top: 10px;
+    max-width: 150px;
+  }
+  .img-pc {
+    margin-top: 10px;
+    max-width: 100px;
+  }
+  table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:768px) {
+  .img-portfolio {
+    margin-top: 10px;
+    max-width: 110px;
+  }
 }
 
 p i {
