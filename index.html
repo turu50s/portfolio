@@ -15,38 +15,39 @@
     </script>
   </head>
   <body>
-      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <div class="back-image"></div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
           <!-- ヘッダー部分 ================ -->
-          <div class="navbar-header">
-              <!-- <a class="navbar-brand" href="#"></a> -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-target" aria-controls="nav-target" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
-          <!-- 中央のナビゲーション部分 ================ -->
-          <div class="collapse navbar-collapse justify-content-center" id="nav-target">
-              <ul class="navbar-nav mr-auto justify-content-center">
-                  <li class="nav-item mr-md-5">
-                      <a class="nav-link pb-0 active" href="#">Top</a>
-                  </li>
-                  <li class="nav-item mr-md-5">
-                      <a class="nav-link pb-0" href="#profile">Profile</a>
-                  </li>
-                  <li class="nav-item mr-md-5">
-                      <a class="nav-link pb-0" href="#skill">Skill</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link pb-0" href="#work">work</a>
-                  </li>
-              </ul>
-          </div>
+        <div class="navbar-header">
+          <!-- <a class="navbar-brand" href="#"></a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-target" aria-controls="nav-target" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      <!-- 中央のナビゲーション部分 ================ -->
+        <div class="collapse navbar-collapse justify-content-center" id="nav-target">
+          <ul class="navbar-nav mr-auto justify-content-center">
+              <li class="nav-item mr-md-5">
+                  <a class="nav-link pb-0 active" href="#">Top</a>
+              </li>
+              <li class="nav-item mr-md-5">
+                  <a class="nav-link pb-0" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item mr-md-5">
+                  <a class="nav-link pb-0" href="#skill">Skill</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link pb-0" href="#work">work</a>
+              </li>
+          </ul>
+        </div>
       </nav>
-      <header class="mt-5 mb-5">
-          <div class="container">
-              <h1 class="text-center pt-5 mt-5">Portfolio</h1>
-              <p class="text-center pt-5 mb-1">Shigeru Tsuruki</p>
-          </div>
-      </header>
+    <header class="mt-5 mb-5">
+      <div class="container">
+        <h1 class="text-center pt-5 mt-5">Portfolio</h1>
+        <p class="text-center pt-5 mb-1">Shigeru Tsuruki</p>
+      </div>
+    </header>
     <main>
       <div class="container">
         <h2 id="profile" class="mb-4">Profile</h2>
@@ -56,9 +57,9 @@
             </div>
             <div class="col-md-8">
                 <table class="table table-striped">
-                    <tr class="text-left"><td class="ml-3">大阪府出身で、現在千葉県に住んでいます。</td class="ml-3"></tr>
-                    <tr class="text-left"><td class="ml-3">過去にCOBOL,PL/1で開発をしたことがあります。</td></tr>
-                    <tr class="text-left"><td>WEBアプリケーションを作りたく勉強中です。</td></tr>
+                  <tr class="text-left"><td class="ml-3">大阪府出身で、現在関東に住んでいます。</td class="ml-3"></tr>
+                  <tr class="text-left"><td class="ml-3">過去にCOBOL,PL/1で開発をしたことがあります。</td></tr>
+                  <tr class="text-left"><td>WEBアプリケーションを作りたく勉強中です。</td></tr>
                 </table>
             </div>
         </div>
@@ -68,7 +69,7 @@
         <div class="table-responsive">
             <table class="table table-striped">
                 <tr><td><i class="fab fa-html5">HTML</i></td><td></td></tr>
-                <tr><td><i class="fab fa-css3-alt">CSS</i></td><td></td></tr>
+                <!-- <tr><td><i class="fab fa-css3-alt">CSS</i></td><td></td></tr> -->
                 <tr><td><i class="fab fa-js">JS</i></td><td></td></tr>
                 <tr><td><i class="fab fa-php">PHP</i></td><td></td></tr>
             </table>
@@ -76,22 +77,21 @@
       </div>
       <div class="container container-work">
         <h2 id="work">work</h2>
-            <div class="text-center ml-5">
-                <p>自分のポートフォリオを作りました。</p>
-                <a href="https://turu50s.github.io/portfolio/">
-                    <!-- <img src="images/GitHub-Mark-Light-64px.png" width="50px" hight="50px" class="text-center"> -->
-                    <img src="images/portfolio.png" class="img-portfolio img-thumbnail" width="180px">
-                </a>
-            </div>
+        <div class="text-center ml-5">
+            <p>自分のポートフォリオを作りました。</p>
+            <a href="https://turu50s.github.io/portfolio/">
+                <img src="images/portfolio.png" class="img-portfolio img-thumbnail" width="180px">
+            </a>
         </div>
       </div>
-      <footer class="fixed-bottom">
+     </main>
+     <footer class="fixed-bottom">
         <div class="icons">
             <a class="btn btn-social btn-fb" href="#" role="button"><i class="fab fa-facebook"></i></a>
             <a class="btn btn-social btn-tw" href="#" role="button"><i class="fab fa-twitter ml-3"></i></a>
         </div>
-      </footer>
-    </main>
+     </footer>
+
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.easing.js"></script>
     <script>
