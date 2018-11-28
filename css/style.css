@@ -90,26 +90,32 @@ h2 {
 @media (max-width:1000px) {
   .img-pc {
     margin-top: 10px;
-    max-width: 80px;
-  }
-}
-
-@media (max-width:768px) {
-  .img-portfolio {
-    margin-top: 5px;
-    max-width: 100px;
+    max-width: 200px;
   }
 }
 
 @media (max-width:568px) {
+  main .container {
+    margin: 0px auto 0;
+    height: 480px;
+    padding: 0px 100px;
+    text-align: center;
+    /* margin-bottom: 100px; */
+    /* background-color: rgba(30,120,110,0.7); */
+  }
+
+  h2 {
+    margin-bottom: 2px;
+  }
+
   .img-portfolio {
     margin-top: 5px;
-    max-width: 80px;
+    max-width: 100px;
   }
 
   .img-pc {
     margin-top: 10px;
-    max-width: 100px;
+    max-width: 60px;
   }
   table {
     font-size: 12px;
